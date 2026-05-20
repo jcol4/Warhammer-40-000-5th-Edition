@@ -8251,7 +8251,7 @@ May not take any relics or artefacts from the Armoury.</description>
                   <rules>
                     <rule name="Eye to Eye" id="ac98-0891-bcc4-8ddb" hidden="false">
                       <description>Although the Codex Astartes includes extensive guidance on raiding, hit and run and guerilla warfare these techniques are not universally employed. The Chapter may not be able to train in these tactics (due to lack of equipment or training facilities) or be temperamentally opposed to them. This drawback may not be selected along with Be Swift as the Wind.
-May only take 0-1 selection in total from the following list: Land Speeder Squadrong, Attack Bike Squadron, Bike Squadron.</description>
+May only take 0-1 selection in total from the following list: Land Speeder Squadron, Attack Bike Squadron, Bike Squadron.</description>
                     </rule>
                   </rules>
                   <constraints>
@@ -8787,6 +8787,11 @@ May not use any Allies.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="58fd-ffa1-5c12-4e59" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9"/>
@@ -8818,6 +8823,11 @@ May not use any Allies.</description>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -8858,6 +8868,11 @@ May not use any Allies.</description>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -8969,6 +8984,11 @@ May not use any Allies.</description>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Land Raider Crusader" hidden="true" id="fb84-726f-ac62-7045" type="selectionEntry" targetId="dcea-afce-6ef5-36b2">
@@ -9027,6 +9047,11 @@ May not use any Allies.</description>
               </conditionGroups>
             </modifier>
             <modifier type="remove" value="6a52-1951-5b0c-024e" field="category"/>
+            <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -9034,11 +9059,6 @@ May not use any Allies.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1db-0b4f-5f57-452a" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="add" value="11cf-dc94-5c14-2c2a" field="category" affects="self.entries">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="da0f-af82-52b0-763e" shared="true" includeChildSelections="true"/>
