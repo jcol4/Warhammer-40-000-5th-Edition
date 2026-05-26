@@ -2657,6 +2657,9 @@ Drop pods may be used in Standard Missions without your opponent&apos;s agreemen
         </entryLink>
         <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="b520-8fae-6d9d-f2ec" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9" sortIndex="4"/>
       </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Land Raider" hidden="false" id="c5b1-0b81-b83f-f3a0" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Terminator Armour" hidden="false" id="a10d-d7dd-4f63-b6a0">
       <costs>
@@ -6023,7 +6026,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         <infoLink name="And They Shall Know No Fear" id="4261-4596-e25b-c766" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9238-3491-9cda-3e1c" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9238-3491-9cda-3e1c" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tyrannic War Veterans" hidden="true" id="d438-1078-bc67-68b4">
@@ -6302,7 +6305,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9a7d-054a-bc53-be0e" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="9a7d-054a-bc53-be0e" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="b53f-61c3-287e-bab9" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
@@ -6317,7 +6320,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         <categoryLink name="Character" hidden="false" id="5272-3075-22d3-8f9d" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad24-39f0-ddf3-7cf1" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad24-39f0-ddf3-7cf1" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -6507,7 +6510,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="c99f-b068-f5fc-c6e0" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="c99f-b068-f5fc-c6e0" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
       <rules>
         <rule name="Tyranid Hunter" id="04a0-656b-a23a-c779" hidden="false">
@@ -6589,7 +6592,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="d9fe-7712-8cb8-5dec" includeChildSelections="true" includeChildForces="true" automatic="true"/>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="d9fe-7712-8cb8-5dec" includeChildSelections="true" includeChildForces="true" automatic="false"/>
       </constraints>
       <profiles>
         <profile name="Tigurius, Chief Librarian" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3cc4-86e1-5e90-889d">
