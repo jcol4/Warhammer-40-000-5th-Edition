@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="5346-564f-637a-87d4">
       <constraints>
@@ -961,6 +961,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8915-0fb1-ffad-0c34" shared="true" childName="Land Raider"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3de1-386b-5317-cbf7" shared="true" childName="Land Raider Crusader"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c68f-30ee-2bb4-5f1c" shared="true" childName="Baal Predator"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -982,6 +983,11 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
           <modifiers>
             <modifier type="prepend" value="Pintle-mounted" field="name"/>
             <modifier type="prepend" value="Pintle-mounted" field="name" affects="profiles.Weapon"/>
+            <modifier type="set" value="10" field="4deb-313d-6685-f48b">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c68f-30ee-2bb4-5f1c" shared="true" childName="Baal Predator"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
@@ -2493,50 +2499,19 @@ You can have 1 Death Company model for each of the following units included in 
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Lascannons" hidden="false" id="a817-6f1a-ed41-6840" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="2x Heavy Flamers" hidden="false" id="a817-6f1a-ed41-6840" sortIndex="2">
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Lascannon" id="1f82-b438-49ff-168f" hidden="false" type="profile" targetId="a985-b7e4-1396-ce64">
+                <infoLink name="Heavy Flamer" id="1f82-b438-49ff-168f" hidden="false" type="profile" targetId="e21b-79a4-8ddd-8617">
                   <modifiers>
-                    <modifier type="set" value="2x Lascannons (Sponsons)" field="name"/>
+                    <modifier type="set" value="2x Heavy Flamers (Sponsons)" field="name"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Turret-mounted Main Weapon" id="57ad-2f89-1404-c22e" hidden="false" sortIndex="1">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannon" hidden="false" id="d4ce-2847-8ed6-fb5d" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Lascannon" id="10aa-71f1-97d3-5c55" hidden="false" type="profile" targetId="a985-b7e4-1396-ce64">
-                  <modifiers>
-                    <modifier type="set" value="Twin-linked Lascannon" field="name"/>
-                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da06-442d-36d2-2757" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2053-b0f8-ff64-0bce" includeChildSelections="false"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Autocannon" hidden="false" id="7295-3544-e935-a1c6" type="selectionEntry" targetId="86a2-0312-b8a2-646e" sortIndex="1"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e2b-a524-2b86-2775" includeChildSelections="false" automatic="true"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c97d-633c-1ebb-4fd9" includeChildSelections="false" automatic="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="append" value="(Turret-mounted)" field="name" affects="profiles.Weapon"/>
-          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -2560,15 +2535,18 @@ You can have 1 Death Company model for each of the following units included in 
       <comment>Blood Angels 4E</comment>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Turret-mounted Twin-linked Assault Cannon" hidden="false" id="781c-d0aa-f79a-defe" sortIndex="1">
-          <entryLinks>
-            <entryLink import="true" name="Assault Cannon" hidden="false" id="be30-2576-0ef8-8cf9" type="selectionEntry" targetId="958c-db25-e5af-3db5">
-              <modifiers>
-                <modifier type="append" value="(Turret-mounted)" field="name" affects="profiles.Weapon"/>
-                <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", " affects="profiles.Weapon"/>
-                <modifier type="prepend" value="Twin-linked" field="name" join=" " affects="profiles.Weapon"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="facb-42cb-3fd2-7061" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3125-f754-e36c-f62c" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Assault Cannon" id="0331-0faa-303a-0db2" hidden="false" type="profile" targetId="d4c2-a3d4-540a-5585"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="append" value="(Turret-mounted)" field="name" affects="profiles.Weapon"/>
+            <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", " affects="profiles.Weapon"/>
+            <modifier type="prepend" value="Twin-linked" field="name" join=" " affects="profiles.Weapon"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
