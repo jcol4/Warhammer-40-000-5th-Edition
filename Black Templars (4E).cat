@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9725-0eb8-9204-b3ba" name="Black Templars (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9725-0eb8-9204-b3ba" name="Black Templars (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Chapter Chaplain" hidden="false" id="a247-e102-9aa7-aa56" type="selectionEntry" targetId="81e5-498e-ee8c-e348">
       <entryLinks>
@@ -255,6 +255,11 @@
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="3" field="4deb-313d-6685-f48b">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="189c-8d4e-a56f-64e5" shared="true" childName="Black Templars Bike Squadron"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Meltagun" hidden="false" id="e67e-78b9-9cbf-3949" type="selectionEntry" targetId="58bb-9069-868e-4a79" sortIndex="2">
@@ -284,9 +289,22 @@
                         <conditionGroup type="or">
                           <conditions>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9f35-3668-d398-7bb4" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="189c-8d4e-a56f-64e5" shared="true" childName="Black Templars Bike Squadron"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="true" id="fde9-ab71-62fa-64bb" type="selectionEntry" targetId="b28f-478a-74fb-ec87" sortIndex="5">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="189c-8d4e-a56f-64e5" shared="true" childName="Black Templars Bike Squadron"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
