@@ -1207,7 +1207,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition type="lessThan" value="1500" field="4deb-313d-6685-f48b" scope="force" childId="any" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="213a-8bf1-e310-6baa" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
