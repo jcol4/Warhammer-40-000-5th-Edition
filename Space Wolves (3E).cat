@@ -3235,6 +3235,7 @@ You may not pick Logan Grimnar or Ragnar Blackmane for this bonus.</description>
         <categoryLink name="Space Wolf" hidden="false" id="f0e5-946e-2f92-50a8" targetId="407e-febc-7e2c-0621" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Forge World" hidden="false" id="5d1e-682f-27ed-60cb" type="selectionEntry" targetId="375a-d331-f8e5-1936" sortIndex="0"/>
   </entryLinks>
   <sharedRules>
     <rule name="Wolf Guard Bodyguard" id="75df-22ef-dab8-7f56" hidden="false">
