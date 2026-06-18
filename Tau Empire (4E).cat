@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Ethereal" hidden="false" id="e1f9-3763-f9f9-9013">
       <categoryLinks>
@@ -1102,7 +1102,7 @@
                   <modifiers>
                     <modifier type="set" value="2" field="bd47-f19e-3513-9175">
                       <conditions>
-                        <condition type="equalTo" value="6" field="selections" scope="parent" childId="model" shared="true"/>
+                        <condition type="equalTo" value="6" field="selections" scope="root-entry" childId="model" shared="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
