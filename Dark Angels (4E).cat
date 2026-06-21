@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="bbe5-2055-bf14-667d" name="Dark Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="bbe5-2055-bf14-667d" name="Dark Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Combat Squads" id="1e13-5a27-bd9e-b0ed" hidden="false">
       <description>A number of ten-man  units in the Dark Angels army have the option of breaking down into two five-man units.
@@ -4286,7 +4286,9 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
               </constraints>
               <modifiers>
                 <modifier type="prepend" value="Pintle-mounted" field="name"/>
-                <modifier type="prepend" value="Pintle-mounted" field="name" affects="profiles.Weapon"/>
+                <modifier type="append" value="(Pintle-mounted)" field="name" affects="profiles.Weapon" join="
+
+"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -4366,6 +4368,41 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
               </characteristics>
             </profile>
           </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Weapon" id="86fd-1b38-55e0-7d28" hidden="false" flatten="true" defaultSelectionEntryId="e9d2-28bd-5cb0-6848" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Bolter (Turret-mounted)" hidden="false" id="805d-a17f-0c5e-d65f" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="d384-3f09-33b1-c044" hidden="false" type="profile" targetId="0e61-328d-62cd-8b59">
+                      <modifiers>
+                        <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
+                        <modifier type="prepend" value="Twin-linked" field="name"/>
+                        <modifier type="append" value="(Turret-mounted)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannon (Turret-mounted)" hidden="false" id="db94-465b-9de8-2e3c" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="c9b8-cb59-3f96-b1ce" hidden="false" type="profile" targetId="a985-b7e4-1396-ce64">
+                      <modifiers>
+                        <modifier type="append" value="(Turret-mounted)" field="name"/>
+                        <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
+                        <modifier type="prepend" value="Twin-linked" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d18-ed2a-c384-25eb" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bcf-9a38-b0d2-03b3" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="c202-73b0-959a-c563" sortIndex="3">
           <costs>
@@ -4649,11 +4686,13 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
         </entryLink>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="e6db-9f87-a0cf-e642" type="selectionEntry" targetId="1ed7-654d-07b2-1121">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2292-0e1d-9d32-a344" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2292-0e1d-9d32-a344" includeChildSelections="false"/>
           </constraints>
           <modifiers>
-            <modifier type="prepend" value="Pintle-mounted" field="name"/>
-            <modifier type="prepend" value="Pintle-mounted" field="name" affects="profiles.Weapon"/>
+            <modifier type="prepend" value="Pintle-mounted" field="name" join=" "/>
+            <modifier type="append" value="(Pintle-mounted)" field="name" affects="profiles.Weapon" join="
+
+"/>
           </modifiers>
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
