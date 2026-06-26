@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 5th Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="jcol4" publicationId="cb5c-cb74-da98-6492">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -62,6 +62,8 @@
     <publication name="Imperial Armour II - Ork, Eldar and Dark Eldar " id="138a-0b3f-cad7-1794" hidden="false" publisher="Imperial Armour II - Ork, Eldar and Dark Eldar Vehicles for Warhammer 40,000" shortName="IA2" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_II_-_Ork,_Eldar_and_Dark_Eldar_Vehicles_for_Warhammer_40,000" publicationDate="2001"/>
     <publication name="Codex: Orks (2008)" id="4f2e-0482-0981-cdae" hidden="false" publicationDate="2008/01" publisherUrl="https://wh40k.lexicanum.com/wiki/Codex:_Orks_(4th_Edition)" publisher="Codex: Orks" shortName="OR08"/>
     <publication name="Codex: Chaos Space Marines (2007)" id="3c33-edbb-79d5-85d1" hidden="false" shortName="CSM07" publisher="Codex: Chaos Space Marines" publicationDate="2007/09" publisherUrl="https://wh40k.lexicanum.com/wiki/Codex:_Chaos_Space_Marines_(4th_Edition)"/>
+    <publication name="Warhammer 40,000 5th Edition Rulebook" id="cb5c-cb74-da98-6492" hidden="false"/>
+    <publication name="Codex: Space Marines (2008)" id="b8b3-96de-ab2d-52b7" hidden="false"/>
   </publications>
   <costTypes>
     <costType name="Points" id="4deb-313d-6685-f48b" defaultCostLimit="-1"/>
@@ -1893,7 +1895,7 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
       </costs>
       <infoLinks>
-        <infoLink name="AA Mount" id="799c-d798-0613-337f" hidden="false" type="rule" targetId="257c-c3b6-2c15-0be7"/>
+        <infoLink name="Anti-Aircraft Mount" id="799c-d798-0613-337f" hidden="false" type="rule" targetId="257c-c3b6-2c15-0be7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713d-5833-9063-9d0a" includeChildSelections="false" automatic="true"/>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="203b-b611-27c0-1b00" name="Warhammer 40,000 5th Edition" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Chapter Master" hidden="false" id="9e7c-b8ab-b222-0a59" sortIndex="1" publicationId="b8b3-96de-ab2d-52b7" page="131">
+      <categoryLinks>
+        <categoryLink targetId="c918-96c1-1ff1-3df1" id="5cff-cd65-78bc-ec57" primary="false" name="Character"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="125"/>
+      </costs>
+      <profiles>
+        <profile name="Chapter Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="d9bd-9da6-e79b-a52d" publicationId="b8b3-96de-ab2d-52b7" page="131">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="4be8-4120-4910-942c" collective="false" type="selectionEntry" publicationId="b8b3-96de-ab2d-52b7"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Captain" hidden="false" id="02ab-463f-60f5-fbfc" publicationId="b8b3-96de-ab2d-52b7" page="131" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="c01f-ea28-f9a9-abab" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="125"/>
+      </costs>
+      <profiles>
+        <profile name="Captain" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4797-bea6-fb64-8761" publicationId="b8b3-96de-ab2d-52b7" page="132">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="06bd-78d2-a972-60d4" collective="false" targetId="194a-9f25-a3c6-f619" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="fd49-81fb-9716-fb24" collective="false" publicationId="b8b3-96de-ab2d-52b7">
+      <infoLinks>
+        <infoLink name="Bolt Pistol" id="c23b-f39b-e2db-712f" hidden="false" targetId="d2c2-d25d-9a03-afc4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="f8c3-890f-1aae-ca79" collective="false">
+      <infoLinks>
+        <infoLink name="Bolter" id="54d5-6dcf-23c7-4311" hidden="false" targetId="fa34-07ff-1a5d-fe9f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Troops" id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" hidden="false"/>
+    <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
+    <categoryEntry name="Heavy Support" id="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" hidden="false"/>
+    <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
+    <categoryEntry name="HQ" id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" hidden="false"/>
+  </categoryEntries>
+  <sharedProfiles>
+    <profile name="Scout" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="16ab-da18-b081-05d4">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">3</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="6244-402b-c286-c93f" publicationId="b8b3-96de-ab2d-52b7">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Space Marine Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="d028-da61-0502-3f1e" publicationId="b8b3-96de-ab2d-52b7">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Scout Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a42e-d1b7-6735-39db">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Ranged Weapons" id="cb1c-f2ee-4578-1e2f" hidden="false" publicationId="7ab0-ceb9-pubN65751" collective="false" import="true" defaultSelectionEntryId="a15f-dbe3-abeb-72a0">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3654-6685-70d7-cf9d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Boltgun" hidden="false" id="a15f-dbe3-abeb-72a0" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
+        <entryLink import="true" name="Combi-flamer" hidden="false" id="fcd2-4d28-c7b6-1f19" collective="false" targetId="1738-0373-fa71-f97b" type="selectionEntry"/>
+        <entryLink import="true" name="Combi-melta" hidden="false" id="51a0-620d-7b30-e8ea" collective="false" targetId="41b7-2235-bd40-76d3" type="selectionEntry"/>
+        <entryLink import="true" name="Combi-plasma" hidden="false" id="f50b-08d3-86f1-480f" collective="false" targetId="a177-d140-7d8c-4d42" type="selectionEntry"/>
+        <entryLink import="true" name="Plasma Pistol" hidden="false" id="ba15-01c6-6cb3-5e80" collective="false" targetId="43f8-0d25-b271-4d6c" type="selectionEntry"/>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="41bc-a464-90d5-3e2c" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
