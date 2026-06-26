@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 5th Edition" battleScribeVersion="2.03" revision="6" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="jcol4" publicationId="cb5c-cb74-da98-6492">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 5th Edition" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="jcol4" publicationId="cb5c-cb74-da98-6492">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -1068,6 +1068,11 @@
         <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
       </characteristics>
     </profile>
+    <profile name="Iron Halo" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="e3a9-2ad6-66db-9c0e">
+      <characteristics>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Deep Strike" id="bbf5-b1c2-49b0-f3c2" hidden="false">
@@ -1903,6 +1908,31 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
       <modifiers>
         <modifier type="append" value="AA Mount" field="8b10-045a-f593-605e" scope="parent" affects="profiles.Weapon" join=", "/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frag and Krak Grenades" hidden="false" id="b046-5d11-a54b-07a2">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Frag Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="4c6d-7b5c-abe6-a3c6">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models armed with frag grenades that are charging an enemy in or behind cover fight with Initiative 10, so they strike blows simultaneously with the defenders.
+Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2513-e788-0d95-d8ab" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Iron Halo" hidden="false" id="c1e7-e066-25b9-c187">
+      <profiles>
+        <profile name="Iron Halo" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="9a16-931d-5349-3fe2">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4+ invulnerable save to model</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <conditions>
