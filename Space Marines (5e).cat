@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="203b-b611-27c0-1b00" name="Space Marines (5E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="9" revision="8" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="203b-b611-27c0-1b00" name="Space Marines (5E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="9" revision="9" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Chapter Master" hidden="false" id="9e7c-b8ab-b222-0a59" sortIndex="1" publicationId="b8b3-96de-ab2d-52b7" page="131">
       <categoryLinks>
@@ -253,8 +253,6 @@
               <entryLinks>
                 <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="13a8-73d9-5b63-b093" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry"/>
               </entryLinks>
-              <costs>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -526,8 +524,6 @@
               <entryLinks>
                 <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="3aea-3a56-4490-ad78" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry"/>
               </entryLinks>
-              <costs>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1108,7 +1104,7 @@
               <entryLinks>
                 <entryLink import="true" name="Boltgun" hidden="false" id="scou-sg-boltgun" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
                 <entryLink import="true" name="Shotgun" hidden="false" id="scou-sg-shotgun" collective="false" targetId="477b-10b1-2505-2525" type="selectionEntry"/>
-                <entryLink import="true" name="Combat Blade" hidden="false" id="scou-sg-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="scou-sg-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
                 <entryLink import="true" name="Sniper Rifle" hidden="false" id="scou-sg-sniper" collective="false" targetId="41a4-2ccc-b269-fa51" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -1159,7 +1155,7 @@
               <entryLinks>
                 <entryLink import="true" name="Boltgun" hidden="false" id="scou-sm-boltgun" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
                 <entryLink import="true" name="Shotgun" hidden="false" id="scou-sm-shotgun" collective="false" targetId="477b-10b1-2505-2525" type="selectionEntry"/>
-                <entryLink import="true" name="Combat Blade" hidden="false" id="scou-sm-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="scou-sm-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
                 <entryLink import="true" name="Sniper Rifle" hidden="false" id="scou-sm-sniper" collective="false" targetId="41a4-2ccc-b269-fa51" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -1295,21 +1291,100 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Razorback" hidden="false" id="095b-822a-2443-7ef2" publicationId="b8b3-96de-ab2d-52b7" page="70">
+      <categoryLinks>
+        <categoryLink name="Dedicated Transport" hidden="false" id="991f-c8c3-4344-b6c2" targetId="ded0-5000-0001-0001" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+      </costs>
+      <profiles>
+        <profile name="Rhino" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="2a7f-5c79-e895-6222">
+          <characteristics>
+            <characteristic name="Front" typeId="46726f6e7423232344415441232323">11</characteristic>
+            <characteristic name="Side" typeId="5.369646523232344e+27">11</characteristic>
+            <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
+            <characteristic name="BS" typeId="a6a5-1595-da9e-6155">4</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Vehicle (Tank)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Razorback" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="d25f-3aaa-3fdb-7608">
+          <characteristics>
+            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">6 models</characteristic>
+            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">0</characteristic>
+            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">One on each side of the hull, one at the rear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Repair" id="62df-56d3-595c-fcb0" hidden="false">
+          <description>If immobilized for any reason, then in subsequent turns the crew can attempt a temporary repair instead of the vehicle shooting. Roll a D6 in the shooting phase, and on a 6 the vehicle is no longer immobilized.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Heavy Bolter" hidden="false" id="91d0-df51-7f0a-97a2" collective="false" targetId="8303-6167-50de-5177" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2420-d513-6bb5-ab42" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="32cc-a961-5893-5df5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="51d2-efb3-4984-fe71" collective="false" targetId="4aad-7fe7-9acb-1ad4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2432-af2d-715e-cf8f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b455-4d89-5edd-e73c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="4f61-7aeb-4eb5-cd3a" collective="false" targetId="f9e5-52e8-1300-2a4a" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="13fe-aab1-6c37-172e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5e66-31d5-ef04-ef11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="eb01-7050-1e21-5457" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6b51-9d93-5485-c31d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="a3df-88c3-22f5-35fb" collective="false" targetId="ff72-89fa-37d7-07a2" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0beb-93ad-7e1a-7d63" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Dozer Blade" hidden="false" id="a8c1-7a0f-1316-10a5" collective="false" targetId="99b1-d567-bb76-a744" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0047-561c-7980-3f4c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="6cc7-4a7a-4441-5534" collective="false" targetId="7b24-f9b1-5eb5-8bbd" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="78da-c46c-93ad-b12e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="fd49-81fb-9716-fb24" collective="false" publicationId="b8b3-96de-ab2d-52b7">
       <infoLinks>
         <infoLink name="Bolt Pistol" id="c23b-f39b-e2db-712f" hidden="false" targetId="d2c2-d25d-9a03-afc4" type="profile"/>
       </infoLinks>
-      <costs>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="f8c3-890f-1aae-ca79" collective="false">
       <infoLinks>
         <infoLink name="Bolter" id="54d5-6dcf-23c7-4311" hidden="false" targetId="fa34-07ff-1a5d-fe9f" type="profile"/>
       </infoLinks>
-      <costs>
-      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hellfire Rounds" hidden="false" id="hr01-0000-0000-0001" collective="false">
       <costs>
@@ -1500,6 +1575,20 @@
         <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
         <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Veteran Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="strn-vm-prof-0001" publicationId="b8b3-96de-ab2d-52b7">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -2156,8 +2245,7 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="bb49-c282-3271-6fab" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="da1c-17db-c444-5ba8" targetId="11cf-dc94-5c14-2c2a"
->
+        <categoryLink name="Fast Attack" hidden="false" id="da1c-17db-c444-5ba8" targetId="11cf-dc94-5c14-2c2a">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="9d59-860c-c13c-a6fe" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
           </constraints>
