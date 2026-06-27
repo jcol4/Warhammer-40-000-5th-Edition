@@ -98,7 +98,6 @@
               </selectionEntryGroups>
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
-                <cost name="pts" typeId="points" value="30"/>
               </costs>
               <profiles>
                 <profile name="Terminator Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="7ad9-aab2-c3c0-c3c6">
@@ -138,7 +137,6 @@
                   </infoLinks>
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
-                    <cost name="pts" typeId="points" value="20"/>
                   </costs>
                   <profiles>
                     <profile name="Artificer Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6973-9062-253e-57c5">
@@ -234,7 +232,6 @@
                 <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="13a8-73d9-5b63-b093" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -367,7 +364,6 @@
               </selectionEntryGroups>
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
-                <cost name="pts" typeId="points" value="30"/>
               </costs>
               <profiles>
                 <profile name="Terminator Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="b46e-32d6-c288-47cc">
@@ -406,7 +402,6 @@
                     </infoLink>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="20"/>
                   </costs>
                   <profiles>
                     <profile name="Artificer Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="93e9-3d2e-32d7-c36d">
@@ -502,7 +497,6 @@
                 <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="3aea-3a56-4490-ad78" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -514,7 +508,6 @@
         <infoLink name="Bolt Pistol" id="c23b-f39b-e2db-712f" hidden="false" targetId="d2c2-d25d-9a03-afc4" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boltgun" hidden="false" id="f8c3-890f-1aae-ca79" collective="false">
@@ -522,7 +515,6 @@
         <infoLink name="Bolter" id="54d5-6dcf-23c7-4311" hidden="false" targetId="fa34-07ff-1a5d-fe9f" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
