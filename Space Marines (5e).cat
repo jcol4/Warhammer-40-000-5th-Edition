@@ -2030,7 +2030,7 @@
       <profiles>
         <profile name="Relic Blade" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="a0b8-8abc-4d2e-dbe3">
           <characteristics>
-            <characteristic name="Details" typeId="acf3-d214-6e51-29fe"/>
+            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A relic blade counts as a power weapon whose hits are resolved at Strength 6. Due to its size and weight, a model wielding a relic blade cannot get an extra attack for an additional close combat weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
