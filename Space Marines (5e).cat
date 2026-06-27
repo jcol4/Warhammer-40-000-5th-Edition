@@ -1374,6 +1374,117 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sternguard Veteran Squad" hidden="false" id="strn-0001-0001-0001" publicationId="b8b3-96de-ab2d-52b7" page="135" sortIndex="12">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="strn-0001-0001-cat1" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="strn-0001-0001-il01" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="strn-0001-0001-sg01" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Space Marine Sergeant" id="strn-0001-0001-sg04" hidden="false" targetId="d028-da61-0502-3f1e" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Armour" hidden="false" id="strn-0001-0001-sg05" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Boltgun" hidden="false" id="strn-0001-0001-sg08" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="strn-0001-0001-sg11" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="strn-0001-0001-sg14" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Special Issue Ammunition" hidden="false" id="strn-0001-0001-sg17" collective="false" targetId="strn-sia-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Veteran Space Marine" hidden="false" id="strn-0001-0001-vm01" collective="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Veteran Space Marine" id="strn-0001-0001-vm04" hidden="false" targetId="strn-vm-prof-0001" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Armour" hidden="false" id="strn-0001-0001-vm05" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Boltgun" hidden="false" id="strn-0001-0001-vm08" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="strn-0001-0001-vm11" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="strn-0001-0001-vm14" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Special Issue Ammunition" hidden="false" id="strn-0001-0001-vm17" collective="false" targetId="strn-sia-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="fd49-81fb-9716-fb24" collective="false" publicationId="b8b3-96de-ab2d-52b7">
@@ -1448,6 +1559,54 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Special Issue Ammunition" hidden="false" id="strn-sia-0001" collective="false">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Boltgun (Hellfire Rounds)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="strn-sia-0002">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Rapid Fire, Poisoned (2+)</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+        <profile name="Boltgun (Dragonfire Bolts)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="strn-sia-0003">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Rapid Fire, Ignores Cover</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+        <profile name="Boltgun (Kraken Bolts)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="strn-sia-0004">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Rapid Fire</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+        <profile name="Boltgun (Vengeance Rounds)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="strn-sia-0005">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">3</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Rapid Fire, Gets Hot!</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Special Issue Ammunition" id="strn-sia-rule-01" hidden="false">
+          <description>All models in the unit must use the same type of ammunition each shooting phase. Choose one of the following types each shooting phase: Hellfire Rounds, Dragonfire Bolts, Kraken Bolts, or Vengeance Rounds.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
