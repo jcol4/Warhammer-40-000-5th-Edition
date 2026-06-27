@@ -978,12 +978,12 @@
     </profile>
     <profile name="Thunder Hammer" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="d847-93ef-b880-0cc8">
       <characteristics>
-        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers. Any model wounded but not killed by an attack with a Thunder Hammer has Initiative 1 in the next Assault Phase. Vehicles struck by a Thunder Hammer suffer a &apos;Crew Shaken&apos; result in addition to any other damage results.</characteristic>
+        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers. Any model wounded but not killed by an attack with a Thunder Hammer has Initiative 1 in the next Assault Phase. Vehicles struck by a Thunder Hammer suffer a &apos;Crew Shaken&apos; result in addition to any other damage results. A model may only receive a bonus attack for an additional close combat weapon if it is equipped with two Thunder Hammers.</characteristic>
       </characteristics>
     </profile>
     <profile name="Power Fist" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="180c-c683-5834-19cc">
       <characteristics>
-        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers.</characteristic>
+        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers. A model may only receive a bonus attack for an additional close combat weapon if it is equipped with two Power Fists.</characteristic>
       </characteristics>
     </profile>
     <profile name="Close Combat Weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="7b3d-1932-99ef-f5c8">
@@ -998,7 +998,7 @@
     </profile>
     <profile name="Lightning Claw" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="5d6f-948a-8857-ed26">
       <characteristics>
-        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Lightning claws are commonly used as matched pairs, as only a second lightning claw can provide an additional close combat weapon attack bonus for a model equipped with one. Lightning claws ignore Armour Saves and re-roll any failed To Wound rolls.</characteristic>
+        <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Ignores Armour Saves. Re-rolls any failed To Wound rolls. A model may only receive a bonus attack for an additional close combat weapon if it is equipped with two Lightning Claws.</characteristic>
       </characteristics>
     </profile>
     <profile name="Storm Shield" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="1b55-f520-4b9a-c7e7">
