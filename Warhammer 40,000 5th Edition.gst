@@ -16,6 +16,7 @@
     <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
     <categoryEntry name="Forge World" id="087b-1c16-81ac-ce0d" hidden="false"/>
+    <categoryEntry name="Dedicated Transport" id="ded0-5000-0001-0001" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>

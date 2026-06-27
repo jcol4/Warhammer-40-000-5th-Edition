@@ -1069,6 +1069,232 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Squad" hidden="false" id="scou-0001-0001-0001" publicationId="b8b3-96de-ab2d-52b7" page="133" sortIndex="11">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="scou-0001-0001-0002" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="23"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Scout Sergeant" hidden="false" id="scou-0001-0001-0003" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0004" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0005" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Scout Sergeant" id="scou-0001-0001-0006" hidden="false" targetId="a42e-d1b7-6735-39db" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scout Armour" hidden="false" id="scou-0001-0001-0010" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0011" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0012" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Weapon" id="scou-sg-grp-001" hidden="false" collective="false" import="true" defaultSelectionEntryId="scou-sg-boltgun">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sg-grp-c01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sg-grp-c02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="scou-sg-boltgun" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
+                <entryLink import="true" name="Shotgun" hidden="false" id="scou-sg-shotgun" collective="false" targetId="477b-10b1-2505-2525" type="selectionEntry"/>
+                <entryLink import="true" name="Combat Blade" hidden="false" id="scou-sg-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
+                <entryLink import="true" name="Sniper Rifle" hidden="false" id="scou-sg-sniper" collective="false" targetId="41a4-2ccc-b269-fa51" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="scou-sg-boltpistol" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sg-bpmin" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sg-bpmax" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="scou-sg-grenades" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sg-grenmin" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sg-grenmax" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Scout" hidden="false" id="scou-0001-0001-0013" collective="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="scou-0001-0001-0014" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="scou-0001-0001-0015" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="13"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Scout" id="scou-0001-0001-0016" hidden="false" targetId="16ab-da18-b081-05d4" type="profile"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scout Armour" hidden="false" id="scou-0001-0001-0020" collective="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0021" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-0001-0001-0022" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Weapon" id="scou-sm-grp-001" hidden="false" collective="false" import="true" defaultSelectionEntryId="scou-sm-boltgun">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sm-grp-c01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sm-grp-c02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="scou-sm-boltgun" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
+                <entryLink import="true" name="Shotgun" hidden="false" id="scou-sm-shotgun" collective="false" targetId="477b-10b1-2505-2525" type="selectionEntry"/>
+                <entryLink import="true" name="Combat Blade" hidden="false" id="scou-sm-ccw" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry"/>
+                <entryLink import="true" name="Sniper Rifle" hidden="false" id="scou-sm-sniper" collective="false" targetId="41a4-2ccc-b269-fa51" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="scou-sm-boltpistol" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sm-bpmin" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sm-bpmax" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="scou-sm-grenades" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="scou-sm-grenmin" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-sm-grenmax" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Scout Heavy Weapon" id="scou-hw-grp-001" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="scou-hw-con-001" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Bolter (Hellfire Shells)" hidden="false" id="scou-hw-hb-0001" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Heavy Bolter (Hellfire Shells)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="scou-hw-hb-0002">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 3, Poisoned (2+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Missile Launcher" hidden="false" id="scou-hw-ml-0001" collective="false" targetId="fbc2-9198-981d-6d4c" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="rhino-0001-0001-0001" publicationId="b8b3-96de-ab2d-52b7" page="70" sortIndex="100">
+      <categoryLinks>
+        <categoryLink name="Dedicated Transport" hidden="false" id="rhino-0001-0001-0002" targetId="ded0-5000-0001-0001" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+      </costs>
+      <profiles>
+        <profile name="Rhino" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="rhino-prof-0001">
+          <characteristics>
+            <characteristic name="BS" typeId="a6a5-1595-da9e-6155">4</characteristic>
+            <characteristic name="Front" typeId="46726f6e7423232344415441232323">11</characteristic>
+            <characteristic name="Side" typeId="5.369646523232344e+27">11</characteristic>
+            <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
+            <characteristic name="Type" typeId="5.479706523232345e+27">Vehicle (Tank)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rhino" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="rhino-prof-0002">
+          <characteristics>
+            <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">10 models</characteristic>
+            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">2</characteristic>
+            <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">One on each side of the hull, one at the rear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Repair" id="rhino-rule-0001" hidden="false">
+          <description>If immobilized for any reason, then in subsequent turns the crew can attempt a temporary repair instead of the vehicle shooting. Roll a D6 in the shooting phase, and on a 6 the vehicle is no longer immobilized.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="rhino-el-0001" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0001" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="rhino-el-0002" collective="false" targetId="4aad-7fe7-9acb-1ad4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0003" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0004" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="rhino-el-0003" collective="false" targetId="f9e5-52e8-1300-2a4a" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0005" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0006" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="rhino-el-0004" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0007" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="rhino-el-0005" collective="false" targetId="ff72-89fa-37d7-07a2" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0008" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Dozer Blade" hidden="false" id="rhino-el-0006" collective="false" targetId="99b1-d567-bb76-a744" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0009" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="rhino-el-0007" collective="false" targetId="7b24-f9b1-5eb5-8bbd" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="rhino-con-0010" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="fd49-81fb-9716-fb24" collective="false" publicationId="b8b3-96de-ab2d-52b7">
@@ -1939,6 +2165,11 @@
         <categoryLink name="Heavy Support" hidden="false" id="0a67-ef88-efbd-30a3" targetId="6a52-1951-5b0c-024e">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="5f93-d609-2e08-5f46" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Dedicated Transport" hidden="false" id="rhino-force-dt-001" targetId="ded0-5000-0001-0001">
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="false" id="rhino-force-dt-c01" percentValue="false" includeChildSelections="false" includeChildForces="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
