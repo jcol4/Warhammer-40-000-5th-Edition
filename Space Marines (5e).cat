@@ -1188,14 +1188,4 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
-  <profileTypes>
-      <characteristicTypes>
-        <characteristicType name="Range" id="9a43-3347-107e-a35e" kind="annotation"/>
-        <characteristicType name="Strength" id="d0f6-a122-9a71-87de" kind="annotation"/>
-        <characteristicType name="AP" id="fb27-368b-dfa6-9704" kind="annotation"/>
-        <characteristicType name="Type" id="dbd5-d100-c214-bf74" kind="annotation"/>
-        <characteristicType name="Info" id="dc95-9bcc-1d7d-1062" kind="longText"/>
-      </characteristicTypes>
-    </profileType>
-  </profileTypes>
 </catalogue>
