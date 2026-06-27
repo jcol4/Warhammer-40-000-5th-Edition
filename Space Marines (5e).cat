@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="203b-b611-27c0-1b00" name="Space Marines (5E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="9" revision="8" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <sharedSelectionEntries>
+  <selectionEntries>
     <selectionEntry type="model" import="true" name="Chapter Master" hidden="false" id="9e7c-b8ab-b222-0a59" sortIndex="1" publicationId="b8b3-96de-ab2d-52b7" page="131">
       <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="a100-0000-0000-0001" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink targetId="c918-96c1-1ff1-3df1" id="5cff-cd65-78bc-ec57" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
@@ -64,7 +65,7 @@
                   <entryLinks>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="21b2-8547-ac0c-0027" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="0" field="points"/>
+                        <modifier type="set" value="0" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f043-a9c8-6025-bad2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -82,7 +83,7 @@
                     <entryLink import="true" name="Terminator Ranged Weapons" hidden="false" id="709c-d979-fcce-557e" collective="false" targetId="586b-b63a-e040-ee72" type="selectionEntryGroup"/>
                     <entryLink import="true" name="Storm Bolter" hidden="false" id="ab9e-42e4-cd59-6ede" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="0" field="points"/>
+                        <modifier type="set" value="0" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0362-c73e-61a3-7a2b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -183,7 +184,7 @@
                   <entryLinks>
                     <entryLink import="true" name="Storm Shield" hidden="false" id="3c2b-f429-7ac3-dbbb" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="15" field="points"/>
+                        <modifier type="set" value="15" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c342-7850-1cc3-5796" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -252,6 +253,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Captain" hidden="false" id="02ab-463f-60f5-fbfc" publicationId="b8b3-96de-ab2d-52b7" page="131" sortIndex="2">
       <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="a100-0000-0000-0002" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="c01f-ea28-f9a9-abab" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <costs>
@@ -330,7 +332,7 @@
                   <entryLinks>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="f0ea-7a83-80fb-1c15" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="0" field="points"/>
+                        <modifier type="set" value="0" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="208f-bb12-159c-c377" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -348,7 +350,7 @@
                     <entryLink import="true" name="Terminator Ranged Weapons" hidden="false" id="2d02-9459-d204-729c" collective="false" targetId="586b-b63a-e040-ee72" type="selectionEntryGroup"/>
                     <entryLink import="true" name="Storm Bolter" hidden="false" id="ca8c-bb9e-121a-3d69" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="0" field="points"/>
+                        <modifier type="set" value="0" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="384b-b5dd-b3dc-98c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -448,7 +450,7 @@
                   <entryLinks>
                     <entryLink import="true" name="Storm Shield" hidden="false" id="032d-bf0a-e235-8299" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
                       <modifiers>
-                        <modifier type="set" value="15" field="points"/>
+                        <modifier type="set" value="15" field="4deb-313d-6685-f48b"/>
                       </modifiers>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9a63-259c-ab1a-22b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -503,6 +505,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt Pistol" hidden="false" id="fd49-81fb-9716-fb24" collective="false" publicationId="b8b3-96de-ab2d-52b7">
       <infoLinks>
         <infoLink name="Bolt Pistol" id="c23b-f39b-e2db-712f" hidden="false" targetId="d2c2-d25d-9a03-afc4" type="profile"/>
@@ -518,13 +522,6 @@
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
-  <categoryEntries>
-    <categoryEntry name="Troops" id="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" hidden="false"/>
-    <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
-    <categoryEntry name="Heavy Support" id="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" hidden="false"/>
-    <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
-    <categoryEntry name="HQ" id="848a6ff2-0def-4c72-8433-ff7da70e6bc7" hidden="false"/>
-  </categoryEntries>
   <sharedProfiles>
     <profile name="Scout" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="16ab-da18-b081-05d4">
       <characteristics>
@@ -724,7 +721,7 @@
         </entryLink>
         <entryLink import="true" name="Extra Armour" hidden="false" id="ec50-2096-5757-a270" collective="false" targetId="7b24-f9b1-5eb5-8bbd" type="selectionEntry">
           <modifiers>
-            <modifier type="set" value="15" field="points">
+            <modifier type="set" value="15" field="4deb-313d-6685-f48b">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="parent" childId="b1b1-b983-197b-5d34" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
