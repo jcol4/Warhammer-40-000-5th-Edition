@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="203b-b611-27c0-1b00" name="Space Marines (5E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="9" revision="9" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="203b-b611-27c0-1b00" name="Space Marines (5E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="9" revision="10" battleScribeVersion="2.03" publicationId="b8b3-96de-ab2d-52b7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Chapter Master" hidden="false" id="9e7c-b8ab-b222-0a59" sortIndex="1" publicationId="b8b3-96de-ab2d-52b7" page="131">
       <categoryLinks>
@@ -1408,18 +1408,6 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Boltgun" hidden="false" id="strn-0001-0001-sg08" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Bolt Pistol" hidden="false" id="strn-0001-0001-sg11" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="strn-0001-0001-sg14" collective="false" targetId="b046-5d11-a54b-07a2" type="selectionEntry">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-sg15" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1433,6 +1421,98 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bolt Pistol" id="af44-6cc1-9d71-7c6d" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-000a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="78ce-5e77-c6ba-6658" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5847-3006-f80e-4274" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="f2e6-3616-5610-9264" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="062c-823f-c921-6f2b" collective="false" targetId="353c-35a0-3a7c-c8e7" type="selectionEntry"/>
+                <entryLink import="true" name="Combi-flamer" hidden="false" id="e618-6fd3-854c-2277" collective="false" targetId="1738-0373-fa71-f97b" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-melta" hidden="false" id="067a-c4aa-77ca-6492" collective="false" targetId="41b7-2235-bd40-76d3" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-plasma" hidden="false" id="658d-ab83-3034-647e" collective="false" targetId="a177-d140-7d8c-4d42" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="6bd0-df1a-3d3d-4fb0" collective="false" targetId="43f8-0d25-b271-4d6c" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="c158-8821-3462-a751" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="882b-ee61-6cfd-b8ba" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="108f-56ba-fdee-0282" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Boltgun" id="4cfc-227f-66e8-92ac" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-0007">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="8fe8-bbdc-1d25-d1e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c58e-3798-d4a6-9341" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="8148-048b-4343-3ba1" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
+                <entryLink import="true" name="Combi-flamer" hidden="false" id="b180-f131-179f-6e04" collective="false" targetId="1738-0373-fa71-f97b" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-melta" hidden="false" id="5ea4-b146-f9f8-4d80" collective="false" targetId="41b7-2235-bd40-76d3" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-plasma" hidden="false" id="53e8-6cdb-38cb-c3e3" collective="false" targetId="a177-d140-7d8c-4d42" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="1374-8524-e3ee-126b" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Chainsword" hidden="false" id="f7e8-fc00-984e-2ea8" collective="false" targetId="353c-35a0-3a7c-c8e7" type="selectionEntry"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="a754-ad68-9c15-31d9" collective="false" targetId="43f8-0d25-b271-4d6c" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="c914-d5a1-5658-5374" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="d4c5-c200-579b-9d7b" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran Space Marine" hidden="false" id="strn-0001-0001-vm01" collective="false">
           <constraints>
@@ -1455,14 +1535,9 @@
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="aca7-54e0-2e06-e163"/>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Boltgun" hidden="false" id="strn-0001-0001-vm08" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </entryLink>
             <entryLink import="true" name="Bolt Pistol" hidden="false" id="strn-0001-0001-vm11" collective="false" targetId="fd49-81fb-9716-fb24" type="selectionEntry">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="strn-0001-0001-vm12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -1482,6 +1557,37 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Boltgun" id="f4b8-3651-7b81-8542" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-0007">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c5fd-0fcf-06d8-49cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eb3c-978a-5918-fcbd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="8468-cac1-24d2-5f7c" collective="false" targetId="f8c3-890f-1aae-ca79" type="selectionEntry"/>
+                <entryLink import="true" name="Combi-flamer" hidden="false" id="bd96-158a-057b-01ad" collective="false" targetId="1738-0373-fa71-f97b" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-melta" hidden="false" id="b6f8-a7f9-aaa1-56e5" collective="false" targetId="41b7-2235-bd40-76d3" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Combi-plasma" hidden="false" id="9723-be98-7fcf-93fb" collective="false" targetId="a177-d140-7d8c-4d42" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Storm Bolter" hidden="false" id="685c-f8f6-15c9-a8aa" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
