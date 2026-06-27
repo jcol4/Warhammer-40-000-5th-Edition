@@ -157,13 +157,13 @@
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Melee Weapons" hidden="false" id="45fb-9717-af77-d60f" collective="false" targetId="388e-cc24-fa10-752e" type="selectionEntryGroup"/>
+                    <entryLink import="true" name="Relic Blade" hidden="false" id="4afa-9b79-f338-95a2" collective="false" targetId="355d-ae8e-7747-0d6c" type="selectionEntryGroup"/>
                     <entryLink import="true" name="Close Combat Weapon" hidden="false" id="e77f-2407-80f0-bef6" collective="false" targetId="a936-e00e-833c-89aa" type="selectionEntry">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5aef-8621-4bb2-ffc1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                     </entryLink>
                     <entryLink import="true" name="Ranged Weapons" hidden="false" id="f77b-2911-f640-a8b4" collective="false" targetId="cb1c-f2ee-4578-1e2f" type="selectionEntryGroup"/>
-                    <entryLink import="true" name="Relic Blade" hidden="false" id="4afa-9b79-f338-95a2" collective="false" targetId="355d-ae8e-7747-0d6c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Bolt Pistol Hand" id="d600-5f51-cf54-dd83" hidden="false" collective="false" import="true" defaultSelectionEntryId="5fea-f803-bf6e-f3d2">
