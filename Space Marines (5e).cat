@@ -1189,7 +1189,6 @@
     </forceEntry>
   </forceEntries>
   <profileTypes>
-    <profileType name="Weapon" id="033f-75cb-ef04-1995" hidden="false" kind="weapon">
       <characteristicTypes>
         <characteristicType name="Range" id="9a43-3347-107e-a35e" kind="annotation"/>
         <characteristicType name="Strength" id="d0f6-a122-9a71-87de" kind="annotation"/>
