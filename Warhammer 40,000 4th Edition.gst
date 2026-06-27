@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 5th Edition" battleScribeVersion="2.03" revision="7" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="jcol4" publicationId="cb5c-cb74-da98-6492">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 5th Edition" battleScribeVersion="2.03" revision="9" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="jcol4" publicationId="cb5c-cb74-da98-6492">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -1914,10 +1914,10 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
       </costs>
       <profiles>
-        <profile name="Frag Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="4c6d-7b5c-abe6-a3c6">
+        <profile name="Frag and Krak Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="4c6d-7b5c-abe6-a3c6">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models armed with frag grenades that are charging an enemy in or behind cover fight with Initiative 10, so they strike blows simultaneously with the defenders.
-Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristic>
+Against vehicles, Krak grenades roll D6+6 for armour penetration.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1930,6 +1930,69 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <profile name="Iron Halo" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="9a16-931d-5349-3fe2">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 4+ invulnerable save to model</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Artificer Armor" hidden="false" id="0dc3-6c6b-8df3-a089">
+      <profiles>
+        <profile name="Artificer Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="13e0-b33f-c253-38bd">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Improve armor save to a 2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terminator Armor" hidden="false" id="cab4-dc6f-dd45-dfca">
+      <profiles>
+        <profile name="Terminator Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="7df3-4cf4-a324-1122">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Improve armor save to a 2+ and grant user Deep Strike and 5+ invulnerable save</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Digital Weapons" hidden="false" id="9555-8fa6-eb13-0151">
+      <profiles>
+        <profile name="Digital Weapons" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="2e6a-31c7-87d9-ea31">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model armed with digital weapons can re-roll a single failed roll to wound in each Assault phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jump pack" hidden="false" id="fb64-7bd9-5810-1ffb">
+      <profiles>
+        <profile name="Jump pack" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6f1d-5787-6c1c-eb73">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Double movement speed and gain Deep Strike</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Space Marine Bike" hidden="false" id="71c2-b781-a307-59dc">
+      <profiles>
+        <profile name="Space Marine Bike" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6c9c-75b0-bd14-75c6">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">add later</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chapter Banner" hidden="false" id="0819-e22e-1f19-7fcf">
+      <profiles>
+        <profile name="Chapter Banner" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="0f8b-3b46-743e-a5cb">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any Space Marine unit within 12&quot; of the Standard Bearer always re-rolls failed Morale and Pinning Tests. In addition, while the standard bearer is alive, the command squad counts as scoring one extra wound in close combat for the purposes of calculating the assault result. Finally, all models in the same unit as the Chapter Banner have +1 Attack whilst the banner bearer is alive.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Company Standard" hidden="false" id="f2b0-5d0e-cf17-edad">
+      <profiles>
+        <profile name="Company Standard" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6e6b-b6c9-1958-5a9a">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any Space Marine unit within 12&quot; of the Standard Bearer always re-rolls failed Morale and Pinning Tests. In addition, while the standard bearer is alive, the command squad counts as scoring one extra wound in close combat for the purposes of calculating the assault result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
