@@ -1003,7 +1003,7 @@
     </profile>
     <profile name="Storm Shield" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="1b55-f520-4b9a-c7e7">
       <characteristics>
-        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A combat shield confers a 4+ Invulnerable Save to the bearer in close combat.</characteristic>
+        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model with a storm shield gains a 3+ invulnerable save, but never receives the +1 bonus attack for being armed with two close combat weapons.</characteristic>
       </characteristics>
     </profile>
     <profile name="Combat Shield" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="574b-cd9f-a341-fa26">
