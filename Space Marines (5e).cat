@@ -11,6 +11,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Chapter Master" id="ebb5-032a-46ac-ca08" hidden="false" targetId="f095-0926-4f32-db67" type="profile"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-cm-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
       </infoLinks>
       <rules>
         <rule name="Orbital Bombardment" id="cm-ob-rule-0001" hidden="false">
@@ -286,6 +287,9 @@
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-cap-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+      </infoLinks>
       <profiles>
         <profile name="Captain" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4797-bea6-fb64-8761" publicationId="b8b3-96de-ab2d-52b7" page="132">
           <characteristics>
@@ -555,6 +559,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Librarian" id="lib0-0000-0000-il01" hidden="false" targetId="f62f-4fb3-d223-7d7e" type="profile"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-lib-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
       </infoLinks>
       <rules>
         <rule name="Psychic Hood" id="lib-ph-rule-0001" hidden="false">
@@ -717,6 +722,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Chaplain" id="chp0-0000-0000-il01" hidden="false" targetId="60be-7fe2-bce6-22f3" type="profile"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-chp-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armor" id="chp0-0000-0000-g01" hidden="false" collective="false" import="true" defaultSelectionEntryId="chp0-0000-0000-e02">
@@ -860,6 +866,10 @@
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="26"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-tact-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-tact-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="tact-0001-0001-0003" collective="false">
           <constraints>
@@ -1084,6 +1094,10 @@
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="23"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-scou-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-scou-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scout Sergeant" hidden="false" id="scou-0001-0001-0003" collective="false">
           <constraints>
@@ -1475,6 +1489,8 @@
       </costs>
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="strn-0001-0001-il01" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-strn-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-strn-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="strn-0001-0001-sg01" collective="false">
@@ -1691,6 +1707,8 @@
       </costs>
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="baec-a6c5-fc91-82f9" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-vang-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-vang-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Space Marine Sergeant" hidden="false" id="dbe2-a631-d1f8-0a9d" collective="false">
@@ -1966,6 +1984,8 @@
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="term-sq-il-0001" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
         <infoLink name="Deep Strike" id="term-sq-il-0002" hidden="false" targetId="bbf5-b1c2-49b0-f3c2" type="rule"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-termsq-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-termsq-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="term-sq-sg-0001" collective="false">
@@ -2044,6 +2064,8 @@
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="term-as-il-0001" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
         <infoLink name="Deep Strike" id="term-as-il-0002" hidden="false" targetId="bbf5-b1c2-49b0-f3c2" type="rule"/>
+        <infoLink name="Combat Tactics" id="sm5e-ct-il-termas-0001" hidden="false" targetId="sm5e-ct-rule-0001" type="rule"/>
+        <infoLink name="Combat Squads" id="sm5e-cs-il-termas-0001" hidden="false" targetId="sm5e-cs-rule-0001" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="term-as-sg-0001" collective="false">
@@ -3632,4 +3654,14 @@
       </categoryLinks>
     </forceEntry>
   </forceEntries>
+  <rules>
+    <rule name="Combat Tactics" id="sm5e-ct-rule-0001" hidden="false">
+      <description>A non-fearless Space Marine unit with this special rule can choose to automatically fail any Morale check it is called upon to take.</description>
+    </rule>
+    <rule name="Combat Squads" id="sm5e-cs-rule-0001" hidden="false">
+      <description>A unit that numbers 10 models with this rule may choose to break down into two 5 model units. The decision to split the unit into combat squads, as well as which models go into each combat squad, must be made when the unit is deployed. Both combat squads can be deployed in separate locations. The one exception is a unit that arrives by drop pod. The player can choose to split such a unit into combat squads when it disembarks from the Drop Pod.
+
+If you decide to split a unit into combat squads, then each combat squad is treated as a separate unit for all game purposes from that point.</description>
+    </rule>
+  </rules>
 </catalogue>

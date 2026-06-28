@@ -971,6 +971,33 @@
         <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
       </characteristics>
     </profile>
+    <profile name="Combi-Melta" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cb00-0001-melt-0001">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+        <characteristic name="AP" typeId="4.1502323234441545e+23">1</characteristic>
+        <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1, Melta, One Shot</characteristic>
+        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+      </characteristics>
+    </profile>
+    <profile name="Combi-Flamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cb00-0001-flam-0001">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+        <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+        <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1, One Shot</characteristic>
+        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+      </characteristics>
+    </profile>
+    <profile name="Combi-Plasma" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="cb00-0001-plas-0001">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+        <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+        <characteristic name="Type" typeId="8b10-045a-f593-605e">Rapid Fire, Gets Hot!, One Shot</characteristic>
+        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+      </characteristics>
+    </profile>
     <profile name="Power Weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="793f-3d45-00ad-58d2">
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Power weapons ignore Armour Saves, and some may give a Strength bonus or wound on a fixed dice score regardless of the enemy&apos;s Toughness characteristic (as detailed in the appropriate army Codex).</characteristic>
@@ -1741,44 +1768,23 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
     <selectionEntry type="upgrade" import="true" name="Combi-melta" hidden="false" id="41b7-2235-bd40-76d3">
       <infoLinks>
         <infoLink name="Bolter" id="67b9-a4e2-7d2e-148c" hidden="false" type="profile" targetId="fa34-07ff-1a5d-fe9f"/>
-        <infoLink name="Meltagun" id="b97f-7570-c4a7-8a14" hidden="false" type="profile" targetId="4771-d658-dd0f-2ccb">
-          <modifiers>
-            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Combi-Melta" id="cb00-0001-melt-il01" hidden="false" type="profile" targetId="cb00-0001-melt-0001"/>
         <infoLink name="Combi-weapon" id="53bf-e1b5-ccbf-2ba6" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="prepend" value="Combi-melta" field="name" join=" - " affects="profiles.Weapon"/>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-plasma" hidden="false" id="a177-d140-7d8c-4d42">
       <infoLinks>
-        <infoLink name="Plasma Gun" id="b751-55b0-312c-96d5" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60">
-          <modifiers>
-            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-          </modifiers>
-        </infoLink>
         <infoLink name="Bolter" id="0dbc-dad3-e73e-48cd" hidden="false" type="profile" targetId="fa34-07ff-1a5d-fe9f"/>
+        <infoLink name="Combi-Plasma" id="cb00-0001-plas-il01" hidden="false" type="profile" targetId="cb00-0001-plas-0001"/>
         <infoLink name="Combi-weapon" id="d02a-c3fe-87fd-84bb" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="prepend" value="Combi-plasma" field="name" join=" - " affects="profiles.Weapon"/>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="1738-0373-fa71-f97b">
       <infoLinks>
         <infoLink name="Bolter" id="a34b-a269-c08b-f838" hidden="false" type="profile" targetId="fa34-07ff-1a5d-fe9f"/>
-        <infoLink name="Flamer" id="eb7d-719f-eb47-d433" hidden="false" type="profile" targetId="e329-1729-419b-2bb6">
-          <modifiers>
-            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Combi-Flamer" id="cb00-0001-flam-il01" hidden="false" type="profile" targetId="cb00-0001-flam-0001"/>
         <infoLink name="Combi-weapon" id="0ca0-6139-4f75-a6e9" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="prepend" value="Combi-flamer" field="name" join=" - " affects="profiles.Weapon"/>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="b28f-478a-74fb-ec87">
       <infoLinks>
