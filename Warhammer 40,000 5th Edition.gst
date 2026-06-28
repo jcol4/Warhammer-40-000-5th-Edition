@@ -1729,7 +1729,11 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <infoLink name="Autocannon" id="18ca-59f8-b9db-3f02" hidden="false" type="profile" targetId="7d29-c50b-9499-c31b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5"/>
+    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5">
+      <infoLinks>
+        <infoLink name="Assault Cannon" id="ac-il-prof-0001" hidden="false" type="profile" targetId="d4c2-a3d4-540a-5585"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="31e2-9687-ef98-263e">
       <infoLinks>
         <infoLink name="Plasma Gun" id="23d9-1386-5c5f-5292" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60"/>
