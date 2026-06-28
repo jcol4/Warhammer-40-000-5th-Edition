@@ -1723,6 +1723,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c433-cea3-9f6e-7335" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="vvs-sg-mb-0001" collective="false" targetId="a1bb-d7bf-d627-b59f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vvs-sg-mb-0002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Bolt Pistol" id="7049-99e4-7d10-c9f3" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-000a">
@@ -1737,9 +1745,9 @@
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power Fist" hidden="false" id="c7ef-bca9-021b-b420" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                <entryLink import="true" name="Storm Shield" hidden="false" id="vvs-sg-bp-ss01" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
                   <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="bcbf-c214-627e-dbd8" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
@@ -1747,19 +1755,39 @@
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Power Sword" id="1494-9d7b-af87-5a49" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-000a">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="806d-42d2-a971-bf22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c25e-85c4-5582-ea8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Plasma Pistol" hidden="false" id="da82-ede4-4862-f527" collective="false" targetId="43f8-0d25-b271-4d6c" type="selectionEntry">
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="vvs-sg-bp-lc01" collective="false" targetId="6b1a-3431-7f5b-300d" type="selectionEntry">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="c7ef-bca9-021b-b420" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="vvs-sg-bp-th01" collective="false" targetId="4ce1-2ed4-e3fd-0cb2" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Power Sword" id="1494-9d7b-af87-5a49" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a02-2b7e-e562-e4de">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="806d-42d2-a971-bf22" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c25e-85c4-5582-ea8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Relic Blade" hidden="false" id="vvs-sg-rb-0001" collective="false">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Relic Blade" id="vvs-sg-rb-0002" hidden="false" type="profile" targetId="a0b8-8abc-4d2e-dbe3"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
                 <entryLink import="true" name="Power Fist" hidden="false" id="a164-c52a-c802-84a9" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
@@ -1778,6 +1806,18 @@
                 <entryLink import="true" name="Thunder Hammer" hidden="false" id="659b-651b-7c9a-e937" type="selectionEntry" targetId="4ce1-2ed4-e3fd-0cb2">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Movement Option" id="vvs-sg-mo-0001" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vvs-sg-mo-0002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Jump pack" hidden="false" id="vvs-sg-jp-0001" collective="false" targetId="fb64-7bd9-5810-1ffb" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1813,6 +1853,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="31a7-d09d-14d8-669d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Melta Bombs" hidden="false" id="vvs-vt-mb-0001" collective="false" targetId="a1bb-d7bf-d627-b59f" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vvs-vt-mb-0002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Bolt Pistol" id="9180-dd81-2142-4bc7" hidden="false" collective="false" import="true" defaultSelectionEntryId="tact-0001-0001-000a">
@@ -1827,14 +1875,29 @@
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power Fist" hidden="false" id="7f4c-c4e3-f813-308a" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                <entryLink import="true" name="Storm Shield" hidden="false" id="vvs-vt-bp-ss01" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
                   <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="2408-4588-3ab8-d691" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="vvs-vt-bp-lc01" collective="false" targetId="6b1a-3431-7f5b-300d" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="7f4c-c4e3-f813-308a" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="vvs-vt-bp-th01" collective="false" targetId="4ce1-2ed4-e3fd-0cb2" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1851,9 +1914,9 @@
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Power Fist" hidden="false" id="195a-6b54-5883-b20f" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                <entryLink import="true" name="Storm Shield" hidden="false" id="vvs-vt-cs-ss01" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
                   <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="f799-bcea-5bd0-e0df" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
@@ -1861,11 +1924,697 @@
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink import="true" name="Lightning Claw" hidden="false" id="vvs-vt-cs-lc01" collective="false" targetId="6b1a-3431-7f5b-300d" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Power Fist" hidden="false" id="195a-6b54-5883-b20f" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Thunder Hammer" hidden="false" id="vvs-vt-cs-th01" collective="false" targetId="4ce1-2ed4-e3fd-0cb2" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Movement Option" id="vvs-vt-mo-0001" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vvs-vt-mo-0002" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Jump pack" hidden="false" id="vvs-vt-jp-0001" collective="false" targetId="fb64-7bd9-5810-1ffb" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Terminator Squad" hidden="false" id="term-sq-0001-0001" publicationId="b8b3-96de-ab2d-52b7" page="136" sortIndex="13">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="term-sq-cat-0001" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="term-sq-il-0001" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
+        <infoLink name="Deep Strike" id="term-sq-il-0002" hidden="false" targetId="bbf5-b1c2-49b0-f3c2" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="term-sq-sg-0001" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Terminator Sergeant" id="term-sq-sg-il01" hidden="false" targetId="term-sgt-prof-0001" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armor" hidden="false" id="term-sq-sg-el01" collective="false" targetId="term-ta-se-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="term-sq-sg-el02" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Sword" hidden="false" id="term-sq-sg-el03" collective="false" targetId="b28f-478a-74fb-ec87" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-sg-co08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Terminator" hidden="false" id="term-sq-tm-0001" collective="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="term-sq-tm-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="term-sq-tm-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Terminator" id="term-sq-tm-il01" hidden="false" targetId="term-prof-0001" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armor" hidden="false" id="term-sq-tm-el01" collective="false" targetId="term-ta-se-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="term-sq-tm-el02" collective="false" targetId="1ed7-654d-07b2-1121" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co05" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Fist" hidden="false" id="term-sq-tm-el03" collective="false" targetId="1437-94bc-050f-66a5" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co07" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-sq-tm-co08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Terminator Assault Squad" hidden="false" id="term-as-0001-0001" publicationId="b8b3-96de-ab2d-52b7" page="136" sortIndex="14">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="term-as-cat-0001" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="And They Shall Know No Fear" id="term-as-il-0001" hidden="false" targetId="8eaf-de62-f965-125b" type="rule"/>
+        <infoLink name="Deep Strike" id="term-as-il-0002" hidden="false" targetId="bbf5-b1c2-49b0-f3c2" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Terminator Sergeant" hidden="false" id="term-as-sg-0001" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Terminator Sergeant" id="term-as-sg-il01" hidden="false" targetId="term-sgt-prof-0001" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armor" hidden="false" id="term-as-sg-el01" collective="false" targetId="term-ta-se-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="term-as-sg-grp01" hidden="false" collective="false" import="true" defaultSelectionEntryId="term-as-sg-lc-el01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lightning Claws" hidden="false" id="term-as-sg-lc-el01" collective="false" targetId="6b1a-3431-7f5b-300d" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Thunder Hammer and Storm Shield" hidden="false" id="term-as-sg-thss-se01" collective="false">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="term-as-sg-thss-el01" collective="false" targetId="4ce1-2ed4-e3fd-0cb2" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-thss-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-thss-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="term-as-sg-thss-el02" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-thss-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-sg-thss-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Assault Terminator" hidden="false" id="term-as-tm-0001" collective="false">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="term-as-tm-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="term-as-tm-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Terminator" id="term-as-tm-il01" hidden="false" targetId="term-prof-0001" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Terminator Armor" hidden="false" id="term-as-tm-el01" collective="false" targetId="term-ta-se-0001" type="selectionEntry">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="term-as-tm-grp01" hidden="false" collective="false" import="true" defaultSelectionEntryId="term-as-tm-lc-el01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lightning Claws" hidden="false" id="term-as-tm-lc-el01" collective="false" targetId="6b1a-3431-7f5b-300d" type="selectionEntry">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Thunder Hammer and Storm Shield" hidden="false" id="term-as-tm-thss-se01" collective="false">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Thunder Hammer" hidden="false" id="term-as-tm-thss-el01" collective="false" targetId="4ce1-2ed4-e3fd-0cb2" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-thss-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-thss-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Storm Shield" hidden="false" id="term-as-tm-thss-el02" collective="false" targetId="8380-823e-3be1-0a52" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-thss-co03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="term-as-tm-thss-co04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dreadnought" hidden="false" id="dred-0001-se-0001" publicationId="b8b3-96de-ab2d-52b7" page="136" sortIndex="50">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="dred-0001-cl-0001" targetId="6a52-1951-5b0c-024e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="105"/>
+      </costs>
+      <profiles>
+        <profile name="Dreadnought" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="dred-0001-prof-0001">
+          <characteristics>
+            <characteristic name="WS" typeId="cdb5-5759-7ba6-4165">4</characteristic>
+            <characteristic name="BS" typeId="c2d0-06f8-ae22-6c79">4</characteristic>
+            <characteristic name="S" typeId="c10b-81fc-f48d-cb9c">6</characteristic>
+            <characteristic name="Front" typeId="2c29-350b-f248-dd77">12</characteristic>
+            <characteristic name="Side" typeId="0420-dd4d-5193-9751">12</characteristic>
+            <characteristic name="Rear" typeId="261f-f688-43d2-6426">10</characteristic>
+            <characteristic name="I" typeId="d3ac-4b4f-59d3-54d0">4</characteristic>
+            <characteristic name="A" typeId="dd6f-2402-7687-9468">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="dred-0001-el-sl01" collective="false" targetId="4aad-7fe7-9acb-1ad4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="dred-0001-co-sl01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-0001-co-sl02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="dred-0001-el-sl02" collective="false" targetId="f9e5-52e8-1300-2a4a" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="dred-0001-co-sl03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-0001-co-sl04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="dred-0001-el-ea01" collective="false" targetId="7b24-f9b1-5eb5-8bbd" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-0001-co-ea01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Left Arm" id="dred-la-grp-0001" hidden="false" collective="false" import="true" defaultSelectionEntryId="dred-la-mm-se01">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="dred-la-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-la-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="dred-la-mm-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Multi-melta" id="dred-la-mm-il01" hidden="false" targetId="1b9f-dc29-44a8-9237" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Flamer" hidden="false" id="dred-la-tlhf-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Heavy Flamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tlhf-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Bolter" hidden="false" id="dred-la-tlhb-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Heavy Bolter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tlhb-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 3, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="dred-la-tlac-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Autocannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tlac-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Plasma Cannon" hidden="false" id="dred-la-tlpc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tlpc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Assault Cannon" hidden="false" id="dred-la-tlassc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Assault Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tlassc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 4, Rending, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannon" hidden="false" id="dred-la-tllc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Lascannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-la-tllc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Right Arm" id="dred-ra-grp-0001" hidden="false" collective="false" import="true" defaultSelectionEntryId="dred-ra-dccwsb-se01">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="dred-ra-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-ra-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dreadnought CCW (Storm Bolter)" hidden="false" id="dred-ra-dccwsb-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Dreadnought Close Combat Weapon" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="dred-ra-dccw-pr01">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Counts as a power fist for the purposes of Strength and AP, but does not suffer the Initiative penalty. Includes a built-in storm bolter or heavy flamer.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Storm Bolter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-ra-sb-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dreadnought CCW (Heavy Flamer)" hidden="false" id="dred-ra-dccwhf-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Dreadnought Close Combat Weapon" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="dred-ra-dccwhf-pr01">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Counts as a power fist for the purposes of Strength and AP, but does not suffer the Initiative penalty. Includes a built-in storm bolter or heavy flamer.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy Flamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-ra-hf-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="dred-ra-tlac-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Autocannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dred-ra-tlac-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Missile Launcher" hidden="false" id="dred-ra-ml-el01" collective="false" targetId="fbc2-9198-981d-6d4c" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dred-ra-ml-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Venerable Dreadnought" hidden="false" id="vend-0001-se-0001" publicationId="b8b3-96de-ab2d-52b7" page="136" sortIndex="51">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="vend-0001-cl-0001" targetId="6a52-1951-5b0c-024e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="165"/>
+      </costs>
+      <profiles>
+        <profile name="Venerable Dreadnought" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="vend-0001-prof-0001">
+          <characteristics>
+            <characteristic name="WS" typeId="cdb5-5759-7ba6-4165">5</characteristic>
+            <characteristic name="BS" typeId="c2d0-06f8-ae22-6c79">5</characteristic>
+            <characteristic name="S" typeId="c10b-81fc-f48d-cb9c">6</characteristic>
+            <characteristic name="Front" typeId="2c29-350b-f248-dd77">12</characteristic>
+            <characteristic name="Side" typeId="0420-dd4d-5193-9751">12</characteristic>
+            <characteristic name="Rear" typeId="261f-f688-43d2-6426">10</characteristic>
+            <characteristic name="I" typeId="d3ac-4b4f-59d3-54d0">4</characteristic>
+            <characteristic name="A" typeId="dd6f-2402-7687-9468">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Venerable" id="vend-0001-rule-0001" hidden="false">
+          <description>If a Venerable Dreadnought suffers a glancing or penetrating hit, you can ask your opponent to re-roll the result rolled on the vehicle damage chart. You must accept the result of the second roll, even if it is worse than the first.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="vend-0001-el-sl01" collective="false" targetId="4aad-7fe7-9acb-1ad4" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="vend-0001-co-sl01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-0001-co-sl02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="vend-0001-el-sl02" collective="false" targetId="f9e5-52e8-1300-2a4a" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="vend-0001-co-sl03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-0001-co-sl04" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Extra Armour" hidden="false" id="vend-0001-el-ea01" collective="false" targetId="7b24-f9b1-5eb5-8bbd" type="selectionEntry">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-0001-co-ea01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Left Arm" id="vend-la-grp-0001" hidden="false" collective="false" import="true" defaultSelectionEntryId="vend-la-mm-se01">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="vend-la-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-la-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Multi-melta" hidden="false" id="vend-la-mm-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Multi-melta" id="vend-la-mm-il01" hidden="false" targetId="1b9f-dc29-44a8-9237" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Flamer" hidden="false" id="vend-la-tlhf-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Heavy Flamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tlhf-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Heavy Bolter" hidden="false" id="vend-la-tlhb-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Heavy Bolter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tlhb-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 3, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="vend-la-tlac-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Autocannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tlac-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Plasma Cannon" hidden="false" id="vend-la-tlpc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tlpc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Assault Cannon" hidden="false" id="vend-la-tlassc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Assault Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tlassc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 4, Rending, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Lascannon" hidden="false" id="vend-la-tllc-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Lascannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-la-tllc-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">9</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Right Arm" id="vend-ra-grp-0001" hidden="false" collective="false" import="true" defaultSelectionEntryId="vend-ra-dccwsb-se01">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="vend-ra-grp-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-ra-grp-co02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Dreadnought CCW (Storm Bolter)" hidden="false" id="vend-ra-dccwsb-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Dreadnought Close Combat Weapon" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="vend-ra-dccw-pr01">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Counts as a power fist for the purposes of Strength and AP, but does not suffer the Initiative penalty. Includes a built-in storm bolter or heavy flamer.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Storm Bolter" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-ra-sb-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dreadnought CCW (Heavy Flamer)" hidden="false" id="vend-ra-dccwhf-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Dreadnought Close Combat Weapon" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="vend-ra-dccwhf-pr01">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Counts as a power fist for the purposes of Strength and AP, but does not suffer the Initiative penalty. Includes a built-in storm bolter or heavy flamer.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Heavy Flamer" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-ra-hf-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">Template</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="vend-ra-tlac-se01" collective="false">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Twin-linked Autocannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="vend-ra-tlac-pr01">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2, Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Missile Launcher" hidden="false" id="vend-ra-ml-el01" collective="false" targetId="fbc2-9198-981d-6d4c" type="selectionEntry">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="vend-ra-ml-co01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1938,6 +2687,21 @@
         <profile name="Teleport Homer" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="tact-th-0002">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any friendly unit with the Deep Strike special rule may use the bearer&apos;s location as a reference point when Deep Striking, rather than the usual scattering method. The bearer must be on the table when the unit begins to Deep Strike.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terminator Armor" hidden="false" id="term-ta-se-0001" collective="false">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="term-ta-il-0001" hidden="false" targetId="bbf5-b1c2-49b0-f3c2" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Terminator Armor" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="term-ta-prof-0001">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Provides 2+ armor save, Deep Strike, and 5+ invulnerable save</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2130,6 +2894,34 @@
         <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
         <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Terminator" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="term-prof-0001" publicationId="b8b3-96de-ab2d-52b7">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Terminator Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="term-sgt-prof-0001" publicationId="b8b3-96de-ab2d-52b7">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry (Character)</characteristic>
+        <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+        <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+        <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+        <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+        <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+        <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+        <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+        <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
