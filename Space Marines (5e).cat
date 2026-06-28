@@ -1052,6 +1052,374 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" id="2e45-62e9-d2e3-ee10" hidden="false" flatten="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Standard Weapons" id="2d31-c05a-b684-ab85" hidden="false" sortIndex="1" flatten="true" defaultSelectionEntryId="9b70-6eb3-19fb-d5e3">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolter" hidden="false" id="55f1-aa53-80d6-45c3" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1" defaultAmount="1">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="1609-a5a8-fcaa-c2ab" type="selectionEntry" targetId="fd49-81fb-9716-fb24" sortIndex="2" defaultAmount="1">
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditionGroups>
+                                <conditionGroup type="and">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="16bd-1997-ce61-f3ce" shared="true" childName="Tactical Squad"/>
+                                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e09c-86b2-ab2b-a901" shared="true" childName="Take the Fight to Them" includeChildSelections="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true" childName="Devastator Squad"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Special Weapons" id="3422-c505-57bc-e06f" hidden="false" sortIndex="2" flatten="true">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="root-entry" shared="true" id="b6b3-7d6b-3647-a131" includeChildSelections="true"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Special Weapons" id="3112-6ee6-9195-2171" hidden="false" sortIndex="1">
+                      <entryLinks>
+                        <entryLink import="true" name="Meltagun" hidden="false" id="a7fa-7f2a-69f8-c105" type="selectionEntry" targetId="58bb-9069-868e-4a79" sortIndex="2">
+                          <costs>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                          </costs>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink import="true" name="Flamer" hidden="false" id="ee18-b1e8-8c3b-1a4f" type="selectionEntry" targetId="4036-58f6-4c1e-1965" sortIndex="1">
+                          <costs>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="6"/>
+                          </costs>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma Gun" hidden="false" id="1439-b2f5-d159-78ea" type="selectionEntry" targetId="31e2-9687-ef98-263e" sortIndex="3">
+                          <costs>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                          </costs>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                            <modifier type="set" value="6" field="4deb-313d-6685-f48b">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9f35-3668-d398-7bb4" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Bolt Pistol &amp; Power Weapon" hidden="true" id="f0ca-5566-83d1-5ef3" sortIndex="4">
+                          <infoLinks>
+                            <infoLink name="Bolt Pistol" id="de58-0132-5f54-a671" hidden="false" type="profile" targetId="d2c2-d25d-9a03-afc4"/>
+                            <infoLink name="Power Weapon" id="2613-f31f-0d3e-1687" hidden="false" type="profile" targetId="793f-3d45-00ad-58d2"/>
+                          </infoLinks>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="veteransquad" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Plasma Pistol &amp; Close combat weapon" hidden="true" id="4acc-f355-5e9f-8e61" sortIndex="5">
+                          <infoLinks>
+                            <infoLink name="Plasma Pistol" id="810c-0b52-35e0-008c" hidden="false" type="profile" targetId="00e2-6e56-5dfe-e202"/>
+                            <infoLink name="Close Combat Weapon" id="8f6f-fb41-a2d2-c2b4" hidden="false" type="profile" targetId="7b3d-1932-99ef-f5c8"/>
+                          </infoLinks>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="7cc0-eeb0-b1f6-b1a0" includeChildSelections="true" automatic="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="2" field="7cc0-eeb0-b1f6-b1a0" affects="self.entries">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="0" field="7cc0-eeb0-b1f6-b1a0">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="root-entry" childId="2443-1c41-6e95-5375" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="1" field="7cc0-eeb0-b1f6-b1a0">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="2443-1c41-6e95-5375" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Heavy Weapons" id="2443-1c41-6e95-5375" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="de6e-b9b8-b427-64cb" type="selectionEntry" targetId="3790-c6ab-c5e5-9f0b" sortIndex="4">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="35" field="4deb-313d-6685-f48b">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="5392-8374-3bda-e7b8" type="selectionEntry" targetId="8303-6167-50de-5177" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="15" field="4deb-313d-6685-f48b">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="10" field="4deb-313d-6685-f48b">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="Heavy Bolter (Hellfire Rounds)" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="true" id="733e-ee6b-acfc-f143">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Irrespective of the Toughness of the target, a Hellfire round always wounds on a 2+.</characteristic>
+                          </characteristics>
+                          <modifiers>
+                            <modifier type="set" value="false" field="hidden">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </profile>
+                      </profiles>
+                    </entryLink>
+                    <entryLink import="true" name="Missile Launcher" hidden="false" id="bea1-fbf5-1b65-57a1" type="selectionEntry" targetId="fbc2-9198-981d-6d4c" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="20" field="4deb-313d-6685-f48b">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Multi-melta" hidden="false" id="650b-7bd2-b908-2c4e" type="selectionEntry" targetId="0e43-0f25-d320-8e55" sortIndex="3">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="20" field="4deb-313d-6685-f48b">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Cannon" hidden="false" id="ad1a-aa95-51b4-2f72" type="selectionEntry" targetId="dafc-5431-7eff-6557" sortIndex="5">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1841-812c-ce41-981f" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="set" value="35" field="4deb-313d-6685-f48b">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="4" field="8ee8-98bc-5c98-0d82">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="2" field="8ee8-98bc-5c98-0d82">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="1" field="8ee8-98bc-5c98-0d82"/>
+                    <modifier type="set" value="0" field="8ee8-98bc-5c98-0d82">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="atLeast" value="2" field="selections" scope="root-entry" childId="3422-c505-57bc-e06f" shared="true" includeChildSelections="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="16bd-1997-ce61-f3ce" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="8ee8-98bc-5c98-0d82" includeChildSelections="true" automatic="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6b3-9151-6583-8841" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c046-e458-c57f-ef95" includeChildSelections="false" automatic="true"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
