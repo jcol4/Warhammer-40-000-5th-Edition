@@ -1985,7 +1985,11 @@ Against vehicles, Krak grenades roll D6+6 for armour penetration.</characteristi
       <profiles>
         <profile name="Space Marine Bike" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6c9c-75b0-bd14-75c6">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">add later</characteristic>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models equipped with Space Marine bikes follow all of the rules for bikes as described in the Warhammer 40,000 rulebook. Space Marine bikes are fitted with a twin-linked bolter.
+
+Bikes: Move 12&quot; in the movement phase. Not slowed by difficult terrain, but treat difficult terrain as dangerous terrain. Cannot run in the shooting phase. Have the Relentless special rule. Each bike may fire one weapon for each rider on the bike. In assault, bikes are not slowed by difficult terrain but must take a dangerous terrain test when entering or moving through difficult terrain, or assaulting an enemy in difficult terrain or behind an obstacle. Fall back 3D6&quot;.
+
+Turbo-Boosters: A bike unit may move up to 24&quot; in the movement phase. The unit cannot move through difficult terrain, shoot, launch assaults, or take any other voluntary action that turn. In the following enemy Shooting phase, the unit has a 3+ cover save but cannot go to ground and automatically passes Pinning tests. The unit must end its move at least 18&quot; from its starting point to claim this cover save.</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -149,7 +149,7 @@
           <profiles>
             <profile name="Mark of Khorne" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="5f69-4e6d-bf9e-e3a3">
               <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Khorne gain +1 Attack.</characteristic>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Khorne gain +1 Attack and the Fearless and Blood Frenzy special rules.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -164,50 +164,32 @@
             </modifier>
             <modifier type="increment" value="1" field="4.123232344415441e+21" affects="self.entries.profiles.Unit" scope="parent"/>
           </modifiers>
+          <rules>
+            <rule name="Fearless" id="a886-fear-rule-0001" hidden="false">
+              <description>The unit automatically passes all Morale checks, Pinning tests, and Regroup tests.</description>
+            </rule>
+            <rule name="Blood Frenzy" id="a886-blfr-rule-0001" hidden="false">
+              <description>At the start of the Movement phase, if any enemy unit is within range and visible, this unit must declare a charge against it. Roll a D6: on a 1 or 2, the unit may not shoot this turn and must move an additional D6&quot; directly towards the nearest visible enemy unit. This unit always performs a Sweeping Advance when it wins an assault.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mark of Tzeentch" hidden="false" id="2b54-9305-b1dd-a202">
           <profiles>
             <profile name="Mark of Tzeentch" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="0a00-ecda-6724-d66b">
               <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Tzeentch gain +1 to their Invulnerable Save (to a maximum of 2+). If given to a model that does not normally have an Invulnerable Save, this mark confers and Invulnerable Save of 5+.
-
-
-The Mark of Tzeentch improves the Invulnerable Save gained from using the Turbo Boosters special rule.</characteristic>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Characters and Aspiring Champions with this mark become Sorcerers and always pass Psychic tests. Units with this mark gain Fearless and a 5+ Invulnerable Save.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="15" field="4deb-313d-6685-f48b">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aba6-9f81-6c63-decd" shared="true" childName="Chaos Lord"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="30" field="4deb-313d-6685-f48b">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e037-0917-6932-52b9" shared="true" childName="Chaos Sorceror"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <rules>
+            <rule name="Fearless" id="2b54-fear-rule-0001" hidden="false">
+              <description>The unit automatically passes all Morale checks, Pinning tests, and Regroup tests.</description>
+            </rule>
             <rule name="Invulnerable Save (5+)" id="4a39-3ba3-ef64-ea73" hidden="false">
-              <description>This model has an Invulnerable Save of 5+.</description>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1dcc-8d0c-7819-2bd4" shared="true" childName="Daemon Prince"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d503-4889-a8fa-83f5" shared="true" childName="Chaos Terminators"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aba6-9f81-6c63-decd" shared="true" childName="Chaos Lord"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e037-0917-6932-52b9" shared="true" childName="Chaos Sorceror"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+              <description>This unit has an Invulnerable Save of 5+.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -215,30 +197,32 @@ The Mark of Tzeentch improves the Invulnerable Save gained from using the Turbo 
           <profiles>
             <profile name="Mark of Slaanesh" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="243b-68bc-f2e9-64a5">
               <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Slaanesh gain +1 Initiative.</characteristic>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Slaanesh gain the Fearless and Scream special rules. Enemy units suffer -1 Initiative while in base contact with this unit during the Assault phase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
           </costs>
-          <modifiers>
-            <modifier type="increment" value="1" field="4.923232344415441e+21" affects="self.entries.profiles.Unit" scope="parent"/>
-          </modifiers>
+          <rules>
+            <rule name="Fearless" id="9286-fear-rule-0001" hidden="false">
+              <description>The unit automatically passes all Morale checks, Pinning tests, and Regroup tests.</description>
+            </rule>
+            <rule name="Scream" id="9286-scrm-rule-0001" hidden="false">
+              <description>Enemy units in base contact with this unit suffer -1 Initiative during the Assault phase.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mark of Nurgle" hidden="false" id="4150-9784-b68a-93c4">
           <profiles>
             <profile name="Mark of Nurgle" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="1509-40c3-7bf8-8f32">
               <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Nurgle gain +1 Toughess. Like the Toughness bonus from riding a Bike, this Mark does not affect the model&apos;s Toughness in regards to the Instant Death rule.
-
-
-The Mark of Nurgle stacks with the Tougness bonus provided by bikes, for a Toughness of 4(6).</characteristic>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with the Mark of Nurgle gain +1 Toughness and the Fearless and True Grit special rules. Like the Toughness bonus from riding a Bike, this mark does not affect the model&apos;s Toughness for Instant Death purposes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
           </costs>
           <modifiers>
             <modifier type="set" value="4 (5)" field="5.423232344415441e+21" affects="self.entries.profiles.Unit" scope="parent">
@@ -260,6 +244,31 @@ The Mark of Nurgle stacks with the Tougness bonus provided by bikes, for a Tough
               </conditionGroups>
             </modifier>
           </modifiers>
+          <rules>
+            <rule name="Fearless" id="4150-fear-rule-0001" hidden="false">
+              <description>The unit automatically passes all Morale checks, Pinning tests, and Regroup tests.</description>
+            </rule>
+            <rule name="True Grit" id="4150-tgrt-rule-0001" hidden="false">
+              <description>Models with True Grit may fire their ranged weapons at full rate of fire in the Shooting phase and still count as charging when they assault in the same turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mark of Chaos Undivided" hidden="false" id="4e2a-undv-mark-0001">
+          <profiles>
+            <profile name="Mark of Chaos Undivided" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="4e2a-undv-prof-0001">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The character or unit may re-roll any failed Morale checks. Only one re-roll may be made and the new result is final. All members of the unit must have the Mark of Chaos Undivided, or be followers or Steeds of a model that has it.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
+          <rules>
+            <rule name="Mark of Chaos Undivided" id="4e2a-undv-rule-0001" hidden="false">
+              <description>May re-roll any failed Morale checks. Only one re-roll may be made and the new result is final. All members of the unit must have the Mark of Chaos Undivided, or be followers or Steeds of a model that has it.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -486,6 +495,7 @@ If the player using this power has a Chaos Spawn model available, he may replace
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d503-4889-a8fa-83f5" shared="true" childName="Chaos Terminators"/>
                     <condition type="greaterThan" value="10" field="selections" scope="root-entry" childId="model" shared="true" childName="model" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="10" field="selections" scope="root-entry" childId="model" shared="true" childName="model" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2590,18 +2600,22 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
           <entryLinks>
             <entryLink import="true" name="Aspiring Champion" hidden="false" id="642c-3634-df51-58b8" type="selectionEntry" targetId="649d-2c57-7679-e4ce" sortIndex="1">
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="13"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Frag Grenades" hidden="false" id="7a18-f6a7-886f-946e" type="selectionEntry" targetId="2d20-fb36-3564-0dbe">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="1"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38c9-c1fd-3dfb-e2be-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38c9-c1fd-3dfb-e2be-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Krak Grenades" hidden="false" id="3161-efbf-3db3-0752" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="2"/>
+              </costs>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5902-0a8b-1a48-d7d4-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5902-0a8b-1a48-d7d4-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
@@ -2619,7 +2633,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="14"/>
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4753-9952-9f29-61b2" includeChildSelections="false"/>
@@ -2630,7 +2644,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
               <entryLinks>
                 <entryLink import="true" name="Bolter" hidden="false" id="c3e4-743e-98d9-8487" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02cc-a68c-7fa0-b982-min" includeChildSelections="false" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="02cc-a68c-7fa0-b982-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02cc-a68c-7fa0-b982-max" includeChildSelections="false" automatic="true"/>
                   </constraints>
                   <modifiers>
@@ -2670,6 +2684,9 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="1cc5-a3be-904d-8a5f" shared="true" childName="Replaces Bolt Pistol"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="adb1-ec56-fadf-e48f" shared="true" childName="Replaces Bolt Pistol"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1fcb-2c8e-4cc2-c033" shared="true" childName="Bolter"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc18-3b3e-d036-9b32" shared="true" childName="Replaces Bolter"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b9da-956d-037f-d15e" shared="true" childName="Heavy/Special Weapons"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2680,6 +2697,9 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="1cc5-a3be-904d-8a5f" shared="true" childName="Replaces Bolt Pistol"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="adb1-ec56-fadf-e48f" shared="true" childName="Replaces Bolt Pistol"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="1fcb-2c8e-4cc2-c033" shared="true" childName="Bolter"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="bc18-3b3e-d036-9b32" shared="true" childName="Replaces Bolter"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="b9da-956d-037f-d15e" shared="true" childName="Heavy/Special Weapons"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2715,12 +2735,13 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
               </entryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Special Weapons" id="fef9-6286-8d60-dfd8" hidden="false" collapsible="true" sortIndex="4">
+                  <comment>Allow 1 special weapon, or 2 if no heavy weapon is taken</comment>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Replaces Bolter" id="bc18-3b3e-d036-9b32" hidden="false" sortIndex="2">
                       <entryLinks>
                         <entryLink import="true" name="Flamer" hidden="false" id="de4d-655a-e5c8-00f9" type="selectionEntry" targetId="4036-58f6-4c1e-1965" sortIndex="1">
                           <costs>
-                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="6"/>
                           </costs>
                         </entryLink>
                         <entryLink import="true" name="Meltagun" hidden="false" id="5274-a70e-09ea-573a" type="selectionEntry" targetId="58bb-9069-868e-4a79" sortIndex="2">
@@ -2730,7 +2751,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                         </entryLink>
                         <entryLink import="true" name="Plasma Gun" hidden="false" id="8e31-2d51-4733-6fbd" type="selectionEntry" targetId="31e2-9687-ef98-263e" sortIndex="3">
                           <costs>
-                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -2740,7 +2761,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                       <entryLinks>
                         <entryLink import="true" name="Plasma Pistol" hidden="false" id="f70c-d03f-14f2-5513" type="selectionEntry" targetId="43f8-0d25-b271-4d6c">
                           <costs>
-                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -2748,7 +2769,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                     </selectionEntryGroup>
                   </selectionEntryGroups>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="9c82-fffa-838d-ef73" includeChildSelections="true" automatic="true"/>
+                    <constraint type="max" value="2" field="selections" scope="root-entry" shared="true" id="9c82-fffa-838d-ef73" includeChildSelections="true" automatic="true"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
@@ -2756,16 +2777,21 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="649d-2c57-7679-e4ce" shared="true" childName="Aspiring Champion"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" value="1" field="9c82-fffa-838d-ef73">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="b9da-956d-037f-d15e" shared="true" childName="Heavy Weapons" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Heavy/Special Weapons" id="b9da-956d-037f-d15e" hidden="false" collapsible="true" sortIndex="5">
+                <selectionEntryGroup name="Heavy Weapons" id="b9da-956d-037f-d15e" hidden="false" collapsible="true" sortIndex="5">
                   <constraints>
-                    <constraint type="max" value="0" field="selections" scope="root-entry" shared="true" id="846c-9cb2-3cb6-6ada" includeChildSelections="true"/>
+                    <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="846c-9cb2-3cb6-6ada" includeChildSelections="true"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Heavy Bolter" hidden="false" id="7114-d298-d3c2-ba76" type="selectionEntry" targetId="8303-6167-50de-5177" sortIndex="1">
                       <costs>
-                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Autocannon" hidden="false" id="e0a4-ebfd-bfec-788f" type="selectionEntry" targetId="86a2-0312-b8a2-646e" sortIndex="3">
@@ -2780,22 +2806,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                     </entryLink>
                     <entryLink import="true" name="Lascannon" hidden="false" id="62fa-2d77-5553-b32e" type="selectionEntry" targetId="3790-c6ab-c5e5-9f0b" sortIndex="4">
                       <costs>
-                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Plasma Gun" hidden="false" id="c5cc-8fc1-bece-0237" type="selectionEntry" targetId="31e2-9687-ef98-263e" sortIndex="7">
-                      <costs>
                         <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Flamer" hidden="false" id="d6d8-44ab-6d36-3f73" type="selectionEntry" targetId="4036-58f6-4c1e-1965" sortIndex="5">
-                      <costs>
-                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Meltagun" hidden="false" id="4b1b-0fb3-d8ab-07f7" type="selectionEntry" targetId="58bb-9069-868e-4a79" sortIndex="6">
-                      <costs>
-                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -2803,11 +2814,6 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="649d-2c57-7679-e4ce" shared="true" childName="Aspiring Champion"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="1" field="846c-9cb2-3cb6-6ada">
-                      <conditions>
-                        <condition type="atLeast" value="10" field="selections" scope="root-entry" childId="model" shared="true" childName="model" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2846,7 +2852,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                       <entryLinks>
                         <entryLink import="true" name="Plasma Pistol" hidden="false" id="fd9c-9fea-1178-79cb" type="selectionEntry" targetId="43f8-0d25-b271-4d6c">
                           <costs>
-                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -2883,6 +2889,88 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                   </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Mark of Chaos" id="4e2a-csm4-mark-g001" hidden="false" sortIndex="6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e2a-csm4-mark-c001" includeChildSelections="true"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Mark of Chaos Undivided" hidden="false" id="4e2a-csm4-undv-l001" type="selectionEntry" targetId="4e2a-undv-mark-0001" sortIndex="1">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e2a-undv-min-0001" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="4e2a-undv-min-0001">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="4e2a-undv-mark-0001" shared="true" includeChildSelections="true" childName="Mark of Chaos Undivided"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Mark of Khorne" hidden="false" id="4e2a-csm4-khon-l001" type="selectionEntry" targetId="a886-8c94-f3d4-d8c0" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e2a-khon-min-0001" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="4e2a-khon-min-0001">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="a886-8c94-f3d4-d8c0" shared="true" includeChildSelections="true" childName="Mark of Khorne"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Mark of Nurgle" hidden="false" id="4e2a-csm4-nurg-l001" type="selectionEntry" targetId="4150-9784-b68a-93c4" sortIndex="3">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e2a-nurg-min-0001" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="4e2a-nurg-min-0001">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="4150-9784-b68a-93c4" shared="true" includeChildSelections="true" childName="Mark of Nurgle"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Mark of Slaanesh" hidden="false" id="4e2a-csm4-slaa-l001" type="selectionEntry" targetId="9286-dbf9-b296-edf2" sortIndex="4">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e2a-slaa-min-0001" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="4e2a-slaa-min-0001">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="9286-dbf9-b296-edf2" shared="true" includeChildSelections="true" childName="Mark of Slaanesh"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Mark of Tzeentch" hidden="false" id="4e2a-csm4-tzee-l001" type="selectionEntry" targetId="2b54-9305-b1dd-a202" sortIndex="5">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e2a-tzee-min-0001" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="1" field="4e2a-tzee-min-0001">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="2b54-9305-b1dd-a202" shared="true" includeChildSelections="true" childName="Mark of Tzeentch"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
